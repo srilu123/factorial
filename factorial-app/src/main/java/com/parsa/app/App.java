@@ -8,12 +8,13 @@ public class App
 {
     public static void main( String[] args )
     {
-    	
+    	Bicycle b=new Bicycle(5,2,3);
     	Point originOne=new Point(2,3);
     	Rectangle rect1=new Rectangle(originOne,5,6);
     	Rectangle rect2=new Rectangle(10, 20);
     	
     	int height=new Rectangle().height;
+    	System.out.println(b.getNumberOfBicycles());
     	
     	System.out.println("the width of the rectangle:"+rect1.width);
     	System.out.println("the height of the rectangle:"+rect1.height);
