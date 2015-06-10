@@ -1,5 +1,7 @@
 package com.parsa.app;
 
+import java.util.Scanner;
+
 ;
 
 	/**
@@ -16,17 +18,21 @@ package com.parsa.app;
 		 * @param n - num
 		 * @return int - factorial
 		 */
-		int getFactorial(int n) {
+		
+		long getFactorial(long n) {
 
-			int output;
+			long output;
 
 			if (n == 0)
 				return 1;
 
-			if (n == 1)
+		    if (n == 1)
 				return 1;
+			if(n<0)
+				return output=getFactorial(n-1)*(-n);
+				
 
-			else
+			else 
 
 				output = getFactorial(n - 1) * n;
 
